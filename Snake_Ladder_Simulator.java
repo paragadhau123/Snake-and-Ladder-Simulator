@@ -22,6 +22,7 @@ import java.util.Random;
           }
 
  	public static void main(String[] args) {
+             while(newPosition<endPosn){
 
                 diceNumber=throwDice();
                 option=optionCheck();
@@ -31,6 +32,9 @@ import java.util.Random;
                  }
 		else if (option == 3){
 		  newPosition = newPosition-diceNumber;
+                  if(newPosition<0){
+                     newPosition=0;
+                   }
                  }
                 else if (option == 0){
                   newPosition=newPosition;
@@ -40,4 +44,5 @@ import java.util.Random;
 		System.out.println("Ending Position : "+ endPosn);
                 System.out.println("New Position : "+ newPosition);
 	}
-   }
+     }
+  }
