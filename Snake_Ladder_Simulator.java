@@ -29,11 +29,14 @@ import java.util.Random;
 
                 if (option == 2){
 		  newPosition = newPosition+diceNumber;
+                  if(newPosition>100){
+                     newPosition = newPosition-diceNumber;
+                   }
                  }
 		else if (option == 3){
 		  newPosition = newPosition-diceNumber;
-                  if(newPosition<0){
-                     newPosition=0;
+                    if(newPosition<0){
+                      newPosition=0;
                    }
                  }
                 else if (option == 1){
