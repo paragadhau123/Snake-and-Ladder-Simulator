@@ -36,7 +36,7 @@ import java.util.Random;
                      newPosition=0;
                    }
                  }
-                else if (option == 0){
+                else if (option == 1){
                   newPosition=newPosition;
                  }
 
