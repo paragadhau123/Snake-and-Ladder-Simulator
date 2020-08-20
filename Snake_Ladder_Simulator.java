@@ -7,8 +7,10 @@ import java.util.Random;
         private static int newPosition = startPosn;
         private static int option = 0;
         private static int diceNumber = 0;
+        private static int numberOfTimesDiceRoll = 0;
 
         public static int throwDice(){
+            numberOfTimesDiceRoll = numberOfTimesDiceRoll+1;
             Random r=new Random();
             int random = r.nextInt(6)+1;
           //int r1 = 1 + (random % 6);
@@ -47,5 +49,6 @@ import java.util.Random;
 		System.out.println("Ending Position : "+ endPosn);
                 System.out.println("New Position : "+ newPosition);
 	}
+                System.out.println("Number of times dice roll to win the game =>"+numberOfTimesDiceRoll);
      }
   }
